@@ -83,17 +83,14 @@ void MinecraftCloneApp::setup()
 	mCamUi = CameraUi(&mViewCam);
 
 	gen.setSeed(255);
-	//gen.setOctaves(12);
-	int f = 0;
+	gen.setOctaves(12);
 	for (int i = -2; i < 2; i++) {
 		for (int j = -2; j < 2; j++) {
 			for (int k = -2; k < 2; k++) {
 				world.LoadChunk(ci::vec3(i, j, k));
-				f++;
 			}
 		}
 	}
-	console() << f;
 }
 
 void MinecraftCloneApp::keyDown(KeyEvent event)

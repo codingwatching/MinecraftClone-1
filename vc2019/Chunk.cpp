@@ -144,7 +144,6 @@ void Chunk::addFace(ci::TriMesh* mesh, ci::vec3 pos, Face face,int blockID)
 		}
 		break;
 	case Chunk::xpos:
-
 			for (int i = 0; i < 4; i++) {
 				mesh->appendPosition(XPosface[i]);
 				appendTex(i, mesh, blockID);
