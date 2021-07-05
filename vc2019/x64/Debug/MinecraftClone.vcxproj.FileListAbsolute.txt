@@ -1,0 +1,6 @@
+C:\Users\18tre\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe
+C:\Users\18tre\MinecraftClone\vc2019\x64\Debug\MinecraftClone.pdb
+D:\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe
+C:\Users\18tre\Desktop\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe
+C:\Users\18tre\Desktop\MinecraftClone\vc2019\x64\Debug\MinecraftClone.pdb
+E:\Code\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe

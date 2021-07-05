@@ -1,0 +1,11 @@
+#pragma once
+template <typename T>
+static T RandRange(T max, T min) {
+	return (rand() % (max + 1 - min)) + min;
+};
+template <typename T>
+static T Remap(T value, T from1, T from2, T to1, T to2) {
+	return (value - from1) / (to1 - from1) * (to2 - from2) + from2;
+};
+
+static int lastFrameTime = 0;

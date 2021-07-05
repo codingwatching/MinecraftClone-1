@@ -1,0 +1,66 @@
+﻿  MinecraftCloneApp.cpp
+  Block.cpp
+  Chunk.cpp
+  Entity.cpp
+  Item.cpp
+  Player.cpp
+C:\Users\18tre\MinecraftClone\vc2019\Entity.cpp(13,20): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\Chunk.cpp(201,52): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\18tre\MinecraftClone\vc2019\Entity.cpp(21,20): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\Entity.cpp(23,20): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\Entity.cpp(25,20): warning C4305: '-=': truncation from 'double' to 'T'
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\World.h(7,25): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file ..\src\MinecraftCloneApp.cpp)
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file ..\src\MinecraftCloneApp.cpp)
+C:\Users\18tre\Desktop\Cinder\include\glad\glad.h(475): message : see previous definition of 'APIENTRY' (compiling source file ..\src\MinecraftCloneApp.cpp)
+C:\Users\18tre\MinecraftClone\src\MinecraftCloneApp.cpp(54,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\18tre\MinecraftClone\src\MinecraftCloneApp.cpp(70,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\18tre\MinecraftClone\src\MinecraftCloneApp.cpp(113,72): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\src\MinecraftCloneApp.cpp(113,53): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\src\MinecraftCloneApp.cpp(113,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  World.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition (compiling source file Player.cpp)
+C:\Users\18tre\Desktop\Cinder\include\glad\glad.h(475): message : see previous definition of 'APIENTRY' (compiling source file Player.cpp)
+C:\Users\18tre\MinecraftClone\vc2019\Player.cpp(5,17): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\18tre\MinecraftClone\vc2019\Player.cpp(6,21): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\18tre\MinecraftClone\vc2019\Player.cpp(86,134): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\Player.cpp(86,56): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\18tre\MinecraftClone\vc2019\World.h(7,25): warning C4305: 'initializing': truncation from 'double' to 'float' (compiling source file World.cpp)
+C:\Users\18tre\MinecraftClone\vc2019\World.cpp(32,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\18tre\MinecraftClone\vc2019\World.cpp(35,21): warning C4018: '<': signed/unsigned mismatch
+LINK : fatal error LNK1104: cannot open file 'cinder.lib'
