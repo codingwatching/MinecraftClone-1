@@ -49,6 +49,7 @@ class MinecraftCloneApp : public App {
 	gl::TextureRef		mTexture;
 	gl::GlslProgRef		mGlsl;
 	time_t lastFrame;
+	ivec3 loadpos;
 
 	Player p = Player(&world);
 };
@@ -61,7 +62,7 @@ void MinecraftCloneApp::setup()
 	//HWND nativeWindow = (HWND)getWindow()->getNative();
 	//SetClassLongPtr(nativeWindow, GCLP_HCURSOR, reinterpret_cast<LONG_PTR>(Cursor));
 
-	hideCursor();
+	//hideCursor();
 
 	srand(time(0));
 	//auto img = loadImage(loadAsset("../resources/checkerboard.jpg"));
@@ -82,8 +83,8 @@ void MinecraftCloneApp::setup()
 	mViewCam.setPerspective(60, getWindowWidth() / getWindowHeight(), 1, 1000);
 	mCamUi = CameraUi(&mViewCam);
 
-	gen.setSeed(255);
-	gen.setOctaves(12);
+	gen.setSeed(2);
+	//gen.setOctaves(12);
 	for (int i = -2; i < 2; i++) {
 		for (int j = -2; j < 2; j++) {
 			for (int k = -2; k < 2; k++) {
@@ -203,6 +204,17 @@ void MinecraftCloneApp::draw()
 	//draw cubes
 	world.Draw();
 	//finish drawing cubes
+
+	//ui
+	ImGui::Begin("menu");
+	ImGui::InputInt3("chunk to load: ", &loadpos);
+	if(ImGui::Button("Load")) {
+		world.LoadChunk(loadpos);
+	}
+	if(ImGui::Button("UnLoad")) {
+		world.UnLoadChunk(loadpos);
+	}
+	ImGui::End();
 }
 
 CINDER_APP( MinecraftCloneApp, RendererGl )

@@ -253,7 +253,7 @@ void Chunk::setChunkPos(ci::vec3 pos)
 			for (int k = 0; k < 16; k++) {
 				float tmp = gen->fBm((i + (ChunkPos * ci::ivec3(16)).x) * scale, (j + (ChunkPos * ci::ivec3(16)).y) * scale, (k + (ChunkPos * ci::ivec3(16)).z) * scale);
 				if (tmp > 0) {
-					getBlock(i, k, j)->SetID(1);
+					getBlock(i, j, k)->SetID(1);
 				}
 			}
 		}

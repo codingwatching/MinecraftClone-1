@@ -20,6 +20,8 @@ public:
 	void LoadChunk(ci::vec3 v);
 	void UnLoadChunk(int x, int y, int z);
 	void UnLoadChunk(ci::vec3 v);
+	bool isChunkLoaded(int x, int y, int z);
+	bool isChunkLoaded(ci::vec3 v);
 	void Draw();
 	ci::TriMesh* getChunkMesh(int x, int y, int z);
 };
