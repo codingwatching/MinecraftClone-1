@@ -1,23 +1,52 @@
-﻿  MinecraftCloneApp.cpp
-D:\MinecraftClone\vc2019\World.h(7,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+﻿  Player.cpp
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
-D:\Cinder\include\glad\glad.h(475): message : see previous definition of 'APIENTRY'
-D:\MinecraftClone\vc2019\Util.h(18,38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-D:\MinecraftClone\src\MinecraftCloneApp.cpp(67,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-D:\MinecraftClone\src\MinecraftCloneApp.cpp(83,47): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-D:\MinecraftClone\src\MinecraftCloneApp.cpp(137,72): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\Cinder\include\glad\glad.h(475): message : see previous definition of 'APIENTRY'
+E:\Code\MinecraftClone\vc2019\World.h(7,25): warning C4305: 'initializing': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Util.h(18,38): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+E:\Code\MinecraftClone\vc2019\Player.cpp(15,18): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(16,12): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(17,15): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(18,21): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(38,81): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-D:\MinecraftClone\src\MinecraftCloneApp.cpp(137,53): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\Code\MinecraftClone\vc2019\Player.cpp(38,53): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-D:\MinecraftClone\src\MinecraftCloneApp.cpp(137,32): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+E:\Code\MinecraftClone\vc2019\Player.cpp(38,25): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
           with
           [
               T=float
           ]
-  MinecraftClone.vcxproj -> D:\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe
+E:\Code\MinecraftClone\vc2019\Player.cpp(90,13): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(125,12): warning C4305: '=': truncation from 'double' to 'float'
+E:\Code\MinecraftClone\vc2019\Player.cpp(153,134): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\Code\MinecraftClone\vc2019\Player.cpp(153,56): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\Code\MinecraftClone\vc2019\Player.cpp(206,82): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\Code\MinecraftClone\vc2019\Player.cpp(206,54): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+E:\Code\MinecraftClone\vc2019\Player.cpp(206,26): warning C4244: 'argument': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  MinecraftClone.vcxproj -> E:\Code\MinecraftClone\vc2019\x64\Debug\MinecraftClone.exe
