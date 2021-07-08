@@ -84,10 +84,11 @@ void MinecraftCloneApp::setup()
 	mCamUi = CameraUi(&mViewCam);
 
 	gen.setSeed(2);
-	//gen.setOctaves(12);
-	for (int i = -2; i < 2; i++) {
-		for (int j = -2; j < 2; j++) {
-			for (int k = -2; k < 2; k++) {
+	gen.setOctaves(12);
+	int l = 4;
+	for (int i = -(l/2); i < l/2; i++) {
+		for (int j = -(l/2); j < l/2; j++) {
+			for (int k = -(l/2); k < l/2; k++) {
 				world.LoadChunk(ci::vec3(i, j, k));
 			}
 		}
