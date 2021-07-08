@@ -18,10 +18,10 @@ Player::Player(World * wrld):Entity(wrld)
 	cursorSpeed = .0005;
 	mDegree = 0;
 	mDegree2 = 0;
-	renderDist = 2;
+	renderDist = 4;
 	mViewCam.setEyePoint(ci::vec3(0,0,0));
 	pause = false;
-	IsChunkLoader = false;
+	IsChunkLoader = true;
 	forward = false;
 	backward = false;
 	left = false;
@@ -197,42 +197,13 @@ void Player::Update()
 		mViewCam.setEyePoint(ci::vec3(pos.x, pos.y + 2, pos.z));
 
 		if (IsChunkLoader) {
-
-			ci::vec3 chunkPosDiff = GetCurrentChunkPos() - GetLastChunkPos();
-
-			if (chunkPosDiff.x >= 1) {
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->LoadChunk(GetCurrentChunkPos().x + renderDist, GetCurrentChunkPos().y + j, GetCurrentChunkPos().z + i);
-					}
-				}
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->UnLoadChunk(GetCurrentChunkPos().x - renderDist, GetCurrentChunkPos().y + j, GetCurrentChunkPos().z + i);
-					}
-				}
-			}
-			if (chunkPosDiff.y >= 1) {
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->LoadChunk(GetCurrentChunkPos().x + j, GetCurrentChunkPos().y + renderDist, GetCurrentChunkPos().z + i);
-					}
-				}
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->UnLoadChunk(GetCurrentChunkPos().x + j, GetCurrentChunkPos().y - renderDist, GetCurrentChunkPos().z + i);
-					}
-				}
-			}
-			if (chunkPosDiff.z >= 1) {
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->LoadChunk(GetCurrentChunkPos().x + j, GetCurrentChunkPos().y + i, GetCurrentChunkPos().z + renderDist);
-					}
-				}
-				for (int j = 0; j < renderDist; j++) {
-					for (int i = 0; i < renderDist; i++) {
-						world->UnLoadChunk(GetCurrentChunkPos().x + j, GetCurrentChunkPos().y + i, GetCurrentChunkPos().z - renderDist);
+			for (int i =-(renderDist/2); i < renderDist/2; i++)
+			{
+				for (int j = -(renderDist/2); j < renderDist/2; j++)
+				{
+					for (int k = -(renderDist/2); k < renderDist/2; k++)
+					{
+						world->LoadChunk(i + GetCurrentChunkPos().x, j + GetCurrentChunkPos().y, k + GetCurrentChunkPos().z);
 					}
 				}
 			}

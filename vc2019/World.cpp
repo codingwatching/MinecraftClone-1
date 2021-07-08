@@ -28,9 +28,11 @@ int World::getNumChunk()
 
 void World::LoadChunk(int x, int y, int z)
 {
-	Chunk tmp(&gen, scale, ci::ivec3(x, y, z));
-	tmp.setTexMap(mTex);
-	chunks.push_back(tmp);
+	if (!isChunkLoaded(x, y, z)) {
+		Chunk tmp(&gen, scale, ci::ivec3(x, y, z));
+		tmp.setTexMap(mTex);
+		chunks.push_back(tmp);
+	}
 }
 
 void World::LoadChunk(ci::vec3 v)
@@ -40,9 +42,11 @@ void World::LoadChunk(ci::vec3 v)
 
 void World::UnLoadChunk(int x, int y, int z)
 {
-	for (int i = 0; i < chunks.size();i++) {
-		if (chunks[i].getChunkPos() == ci::vec3(x, y, z)) {
-			chunks.erase(chunks.begin()+i);
+	if (isChunkLoaded(x, y, z)) {
+		for (int i = 0; i < chunks.size(); i++) {
+			if (chunks[i].getChunkPos() == ci::vec3(x, y, z)) {
+				chunks.erase(chunks.begin() + i);
+			}
 		}
 	}
 }
