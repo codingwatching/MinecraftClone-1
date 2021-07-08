@@ -21,7 +21,7 @@ Player::Player(World * wrld):Entity(wrld)
 	renderDist = 4;
 	mViewCam.setEyePoint(ci::vec3(0,0,0));
 	pause = false;
-	IsChunkLoader = true;
+	IsChunkLoader = false;
 	forward = false;
 	backward = false;
 	left = false;
